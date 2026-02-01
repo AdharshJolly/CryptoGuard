@@ -1,0 +1,107 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.next/
+out/
+.turbo/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+.env.*.swp
+.cache/
+
+# Machine Learning
+*.pkl
+*.h5
+*.model
+*.pth
+
+# Logs
+logs/
+*.log
+npm-loglevel.json
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Specific to backend
+backend/data/processed_*
+backend/data/temp_*
+backend/catboost_info/
+backend/test_post/
+
+# Specific to frontend
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+.postgres/
+
+# Blockchain
+.ganache/
+.hardhat/
+
+# Other
+.env.example.local
+secrets.txt
+config.local.js

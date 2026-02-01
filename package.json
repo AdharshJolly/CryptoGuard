@@ -1,0 +1,54 @@
+{
+  "name": "cryptoguard",
+  "version": "1.0.0",
+  "description": "CryptoGuard: AI Anti-Money Laundering Intelligence Platform for Digital Wallets",
+  "keywords": [
+    "blockchain",
+    "cryptocurrency",
+    "aml",
+    "anti-money-laundering",
+    "forensics",
+    "machine-learning",
+    "ethereum"
+  ],
+  "author": "CIPHER Team",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend/data-pipeline/processor"
+  ],
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:lint": "cd frontend && npm run lint",
+    "backend:install": "cd backend && pip install -r requirements.txt",
+    "backend:dev": "cd backend && python app.py",
+    "backend:test": "cd backend && pytest",
+    "data-pipeline:install": "cd backend/data-pipeline/processor && npm install",
+    "data-pipeline:dev": "cd backend/data-pipeline/processor && npm run dev",
+    "setup": "npm install && npm run backend:install && npm run data-pipeline:install",
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "build": "npm run frontend:build",
+    "lint": "npm run frontend:lint",
+    "clean": "rm -rf frontend/.next backend/__pycache__ backend/.pytest_cache",
+    "docs": "echo 'Documentation available at README.md, ARCHITECTURE.md, SETUP.md'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0",
+    "python": ">=3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/CryptoGuard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/CryptoGuard/issues"
+  },
+  "homepage": "https://github.com/yourusername/CryptoGuard#readme"
+}
